@@ -1,0 +1,156 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+  text-decoration: none;
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+body {
+  color: #bfc1c8 !important;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+.collapse .navbar-nav .nav-item a {
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+
+.collapse .navbar-nav .nav-item .active,
+.collapse .navbar-nav .nav-item:hover a {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.logo-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-type .site-title,
+small {
+  font-size: 16px;
+}
+
+.logo-type .site-description {
+  font-size: 10px;
+}
+
+.navbar-toggler {
+  background: none;
+  border: 1px solid transparent;
+  color: white;
+  padding: 5px;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+
+.navbar-toggler:hover,
+.navbar-toggler:active {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+.forecast-table {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.color1 {
+  background: #323544;
+}
+
+.color2 {
+  background-color: #262936;
+}
+
+.color3 {
+  background: #1e202b;
+
+}
+
+
+.bark-shadow {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.find-location input[type="text"] {
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+}
+
+form input[type="button"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+.find-location input[type="submit"],
+.find-location input[type="button"],
+.subscribe input[type="submit"],
+.subscribe input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+}
+
+.blue-text {
+  color: #009ad8;
+  margin: 20px 0;
+}
+
+.today-data span {
+
+  margin-right: 10px;
+}
+
+.site-footer {
+  background: #262936;
+  padding: 50px 0;
+}
+
+.site-footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+.site-footer .social-links a:hover {
+  background: #009ad8;
+  color: white;
+}

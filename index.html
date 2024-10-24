@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="images/weather.png" />
+
+
+	<title>WEATHER</title>
+	
+	<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+	<link rel="stylesheet" href="CSS/madie.css" />
+	<link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+	<div class="site-header">
+		<nav class="navbar navbar-expand-lg py-4 ">
+			<div class="container">
+				<a href="index.html" class="navbar-brand d-flex align-items-center">
+					<img src="images/logo.png" alt="" class="logo me-2">
+					<div class="logo-type text-white">
+						<h1 class="site-title mb-0 ">Weather</h1>
+						<small class="site-description ">tagline goes here</small>
+					</div>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" s></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Live cameras</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Photos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="forecast-table">
+		<!-- saerch section -->
+		<div class="hero">
+			<div class="container mb-5">
+				<form action="#" class=" find-location position-relative">
+					<input type="text" class="w-100 mx-auto  color3 text-white" placeholder="Find your location..."
+						id="saerch" />
+					<input type="button" value="Find" id="submit" />
+				</form>
+			</div>
+		</div>
+		<!-- saerch section end -->
+		<div class="container ">
+			<div class="forecast-container">
+				<div class="row g-0">
+					<!-- today section -->
+					<div class="color1 col-md-4 m-0 rounded-start ">
+						<div class="bark-shadow d-flex justify-content-between p-3 rounded-start">
+							<p id="todayName" class="my-auto"></p>
+							<span>
+								<span id="todayNum" class="my-auto"></span>
+								<span id="todayMonth" class="my-auto"></span>
+							</span>
+						</div>
+						<div class="item-content text-start p-4" >
+							<p id="todayCity" class="fs-4"></p>
+							<div class="d-flex justify-content-between align-items-center">
+								<span class="fs-1 fw-bolder text-white ">
+									<span id="todayTemp"></span>
+									<span><sup>o</sup>C</span>
+								</span>
+								<img src="" alt="" id="todayConditionImg" />
+							</div>
+							<p id="todayConditionText" class="blue-text"></p>
+							<div class="todayData d-flex text-light">
+								<span class="d-flex align-items-center">
+									<img src="images/icon-umberella@2x.png" class="footer-icon mx-2 w-25" alt="" />
+									<p id="humidity" class="mb-0"></p>
+									<span>%</span>
+								</span>
+								<span class="d-flex align-items-center">
+									<img src="images/icon-wind@2x.png" class="footer-icon mx-2 w-25" alt="" />
+									<p id="wind" class="mb-0"></p>
+									<span>Km/h</span>
+								</span>
+								<span class="d-flex align-items-center">
+									<img src="images/icon-compass@2x.png" class="footer-icon mx-2 w-25" alt="" />
+									<p id="windDir" class="mb-0"></p>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!-- today section end -->
+					
+					<!-- tomorrow section -->
+					<div class="col-md-4 color2 ">
+						<div class="bark-shadow text-center p-3">
+							<p class="my-auto" id="tomorrowName"></p>
+						</div>
+						<div class="item-content text-start  text-center p-4">
+							<img src="" alt="" id="tomorrowConditionIcon" />
+							<h3>
+								<span id="tomorrowMaxTemp"></span>
+								<span><sup>o</sup>C</span>
+							</h3>
+							<small class="">
+								<span id="tomorrowMinTemp"></span>
+								<span><sup>o</sup>C</span>
+							</small>
+							<p id="tomorrowConditionText" class="blue-text"></p>
+						</div>
+					</div>
+					<!-- tomorrow section end -->
+					
+					<!-- after tomorrow section -->
+					<div class="col-md-4 color1 text-center rounded-end ">
+						<div class="bark-shadow p-3" >
+							<p class="my-auto" id="afterTomorrowName"></p>
+						</div>
+						<div class="text-start  text-center p-4">
+							<img src="" alt="" id="afterTomorrowConditionIcon" />
+							<h3>
+								<span id="afterTomorrowMaxTemp"></span>
+								<span><sup>o</sup>C</span>
+							</h3>
+							<small class="">
+								<span id="afterTomorrowMinTemp"></span>
+								<span><sup>o</sup>C</span>
+							</small>
+							<p id="afterTomorrowConditionText" class="blue-text"></p>
+						</div>
+					</div>
+					<!-- after tomorrow section end -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row d-flex justify-content-between align-items-center mb-4">
+				<div class="col-md-8">
+					<form action="#" class=" find-location position-relative">
+						<input type="text" class="w-100 mx-auto  color3 text-white"
+							placeholder="Enter your email to subscribe..." />
+						<input type="button" value="Subscribe" id="submit" />
+					</form>
+				</div>
+				<div class="col-md-3">
+					<div class="social-links">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+			<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+		</div>
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

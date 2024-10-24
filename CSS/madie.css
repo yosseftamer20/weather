@@ -1,0 +1,168 @@
+/* XXL Screen */
+@media (width >=1400px) {
+    .xxl-16 {
+        width: 16.66666%;
+    }
+
+    .xxl-20 {
+        width: 20%;
+    }
+
+    .xxl-25 {
+        width: 25%;
+    }
+
+    .xxl-33 {
+        width: 33.33333%;
+    }
+
+    .xxl-50 {
+        width: 50%;
+    }
+
+    .xxl-100 {
+        width: 100%;
+    }
+}
+
+/* XL Screen */
+
+@media (1200px <=width <=1399px) {
+    xl-16 {
+        width: 16.66666%;
+    }
+
+    .xl-20 {
+        width: 20%;
+    }
+
+    .xl-25 {
+        width: 25%;
+    }
+
+    .xl-33 {
+        width: 33.33333%;
+    }
+
+    .xl-50 {
+        width: 50%;
+    }
+
+    .xl-100 {
+        width: 100%;
+    }
+}
+
+/* LG Screen */
+
+@media (992px <=width <=1199px) {
+    .lg-16 {
+        width: 16.66666%;
+
+    }
+
+    .lg-20 {
+        width: 20%;
+
+    }
+
+    .lg-25 {
+        width: 25%;
+    }
+
+    .lg-33 {
+        width: 33.33333%;
+    }
+
+    .lg-50 {
+        width: 50%;
+    }
+
+    .lg-100 {
+        width: 100%;
+    }
+}
+
+/* MD Screen */
+
+@media (786px <=width <=767px) {
+    .md-16 {
+        width: 16.66666%;
+    }
+
+    .md-20 {
+        width: 20%;
+    }
+
+    .md-25 {
+        width: 25%;
+    }
+
+    .md-33 {
+        width: 33.33333%;
+    }
+
+    .md-50 {
+        width: 50%;
+    }
+
+    .md-100 {
+        width: 100%;
+    }
+}
+
+/* SM Screen */
+
+@media (width <=575px) {
+    .sm-16 {
+        width: 16.66666%;
+    }
+
+    .sm-20 {
+        width: 20%;
+    }
+
+    .sm-25 {
+        width: 25%;
+    }
+
+    .sm-33 {
+        width: 33.33333%;
+    }
+
+    .sm-50 {
+        width: 50%;
+    }
+
+    .sm-100 {
+        width: 100%;
+    }
+}
+
+/* XS Screen */
+
+@media (width <=575px) {
+    .xs-16 {
+        width: 16.66666%;
+    }
+
+    .xs-20 {
+        width: 20%;
+    }
+
+    .xs-25 {
+        width: 25%;
+    }
+
+    .xs-33 {
+        width: 33.33333%;
+    }
+
+    .xs-50 {
+        width: 50%;
+    }
+
+    .xs-100 {
+        width: 100%;
+    }
+}
